@@ -1,0 +1,65 @@
+.lots {
+  margin-top: 180px;
+  padding: 0 24px;
+
+  &__title {
+    margin: 0 0 27px 16px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  &__item {
+    min-width: 0;
+    height: 598px;
+  }
+
+  &__more {
+    display: inline-block;
+    margin: 30px 0 0 16px;
+    font-size: 20px;
+    line-height: 1;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+@media (max-width: 900px) {
+  .lots {
+    padding: 0 25px;
+
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      height: 550px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .lots {
+    margin-top: 80px;
+    padding: 0 20px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__list {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      height: 450px;
+    }
+  }
+}
