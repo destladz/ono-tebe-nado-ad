@@ -10,7 +10,6 @@
 
 - HTML5
 - CSS3
-- SCSS
 - Flexbox и Grid
 - Git и GitHub
 
